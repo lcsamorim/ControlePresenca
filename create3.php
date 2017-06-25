@@ -25,7 +25,7 @@ include("baseSession.php");
                        @$pegaraulas = implode(" ", $aulas);
                     }
         }
-if(@$pegaraulas != null || $numfreq<=$contarconsulta){
+if(@$pegaraulas != null && $numfreq<=$contarconsulta){
     if(isset($_POST['acao']) && $_POST['acao'] == "enviar"){
                         foreach ($aulas as $valor) {
                         }

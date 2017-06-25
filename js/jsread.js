@@ -3,13 +3,13 @@ $(function(){
 	$("#numfreq").keyup(function(){
 		
 		var pesquisa = $(this).val();
-		
 		//Verificar se há algo digitado
 		if(pesquisa != ''){
 			var dados = {
 				palavra : pesquisa
-			}		
-			$.post('create2.php', dados, function(retorna){
+			}
+                
+                        $.post('readnome2.php', dados, function(retorna){
 				//Mostra dentro da ul os resultado obtidos 
 				$(".resultado").html(retorna);
 			});

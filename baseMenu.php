@@ -5,7 +5,6 @@
                 border-left:2px solid white;
                 border-right:2px solid white;
                 color:white;
-                font-family:vintage straps;
                 font-size:50px;
                 line-height: 44px;
                 opacity:.9;
@@ -70,7 +69,15 @@
                 color:white;
                 opacity:1;
             }
+           @font-face {
 
+      font-family: "vintage straps light";
+      src: url("font/vintage_straps.ttf") format("truetype");
+
+      }
+      .vintage_straps-font{
+    font-family: "vintage straps light";  
+       } 
 </style>
 
 <div class="menu menutexto">
@@ -79,7 +86,6 @@
                 <a href="home.php" class="menutexto" style="font-size:30px">Controle de Presença</a>
 <a class="nomesair" style="text-decoration: none; float:right; margin-right:20px;margin-top:10px;" href="?sair" onclick="return confirm('Deseja realmente sair?');"> | Sair</a>
 <a class="nomesair" href='#' style="text-decoration: none;float:right; margin-top:10px"><?php 
-     
             $sql = "SELECT * FROM tblogin where email='$_SESSION[usuario1]'";
             foreach ($conexao->query($sql) as $linha) {
                 echo $linha['nome']." ";

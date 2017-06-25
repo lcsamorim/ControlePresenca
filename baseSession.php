@@ -12,4 +12,3 @@ if(isset($_REQUEST['sair'])){
     header("location: index.php");
 }
 ?>
-
