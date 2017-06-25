@@ -12,6 +12,7 @@ session_start();
     <head>
         <meta charset="UTF-8">
         <title>Controle de presença</title>
+        <link rel="shortcut icon" href="img/ico/controledepresenca.ico">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     </head>
             <p style="font-size:30px; margin-left:30px;margin-top:20px;">Controle de presença</p><hr />           
@@ -26,7 +27,11 @@ session_start();
             Senha:  <input type="password" name="senha" placeholder="Digite aqui sua senha"><br><br>
             <input class="btn btn-danger" style="width:225px" type="submit" name="logar" value="Entrar">
             </div>
-             
+             </center>
+                 </form>
+                                </div>
+                            </div>
+                </div>   
             <?php 
             if(isset($_SESSION['usuario1'])&& isset($_SESSION['senha1'])){
     header ("location: home.php");exit;
@@ -54,13 +59,7 @@ try {
     echo $e;
 }
 
-} ?>
-</center>
-                 </form>
-                                </div>
-                            </div>
-                </div>               
-<?php
+} 
              include("rodape.php");
              ?>
    
