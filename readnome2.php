@@ -9,7 +9,7 @@ $palavra = "SELECT * from tbaluno WHERE numfreq LIKE '$palavra'";
     foreach ($conexao->query($palavra) as $linha) {
         
     }
-     $nometbaluno = $linha['nome'];
+     $nometbaluno = @$linha['nome'];
     
 $pegarnome = "SELECT * from tbaluno where nome='$nometbaluno'";  
 $resultnome = $conexao->prepare($pegarnome);
