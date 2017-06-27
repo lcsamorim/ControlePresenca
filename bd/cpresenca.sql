@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 25-Jun-2017 às 22:14
+-- Generation Time: 27-Jun-2017 às 18:15
 -- Versão do servidor: 5.6.24
 -- PHP Version: 5.5.24
 
@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS `tbaluno` (
 INSERT INTO `tbaluno` (`numfreq`, `nome`) VALUES
 (1, 'Alexsandro Souza'),
 (2, 'Aline Araújo'),
-(3, 'Ana Kely'),
-(4, 'André Ferreira'),
+(4, 'Ana Kely'),
+(3, 'André Ferreira'),
 (7, 'Antônio Mateus'),
 (8, 'Argimiro Neto'),
 (5, 'Daniela Souza'),
